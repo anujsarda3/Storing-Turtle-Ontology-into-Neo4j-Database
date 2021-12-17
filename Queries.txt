@@ -1,0 +1,5 @@
+MATCH (s {label:"Archimedes"})-[:has_discovered]->(t) return  s,t
+
+profile Match(n)where n.label="Archimedes" return n
+
+profile Match(n:Scientist)where n.label="Archimedes" return n
